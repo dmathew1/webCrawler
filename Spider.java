@@ -54,7 +54,7 @@ public class Spider{
     leg.crawl(currentUrl);
     boolean success = leg.searchForWord(searchWord);
     if(success){
-      System.out.println(String.format("Success: Word %s found at $s",searchWord,currentUrl));
+      System.out.println(String.format("Success: Word %s found at %s",searchWord,currentUrl));
       break;
     }
     this.pagesToVisit.addAll(leg.getLinks());
